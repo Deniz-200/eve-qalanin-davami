@@ -1,0 +1,63 @@
+.container{
+    width: 100%;
+    display: grid;
+    height: 500px;
+    grid-template-areas: 'start start  topcenter topcenter topcenter main main main main topright topright'
+    'left left topcenter topcenter topcenter main main main main right right'
+    'centerleft centerleft smallcenter smallright smallright main main main main centerright centerright'
+    'end end end end end main main main main endright endright'
+    ;
+    gap: 1px;
+}
+.container div{
+    border: 1px solid rgb(255, 255, 255);
+}
+.item1{
+    grid-area: start;
+    background-color: darkmagenta;   
+}
+
+.item2{
+    grid-area: topcenter;
+    background-color: rgb(249, 0, 195);
+}
+.item3{
+    grid-area: main;
+    background-color: coral ;
+}
+.item4{
+    grid-area:topright ;
+    background-color: gold;
+}
+.item5{
+    grid-area: left;
+    background-color: darkgreen;
+}
+.item6{
+    grid-area:right ;
+    background-color: darkcyan;
+}
+.item7{
+    grid-area: centerleft;
+    background-color: greenyellow;
+}
+.item8{
+    grid-area: smallcenter;
+    background-color: green;
+}
+.item9{
+    grid-area:smallright;
+    background-color: rgb(0, 111, 247);
+}
+.item10{
+   grid-area: centerright;
+   background-color: rgb(0, 255, 208);
+}
+.item11{
+    grid-area: end;
+    background-color: darkviolet;
+}
+.item12{
+    grid-area: endright;
+    background-color: darkred;
+}
